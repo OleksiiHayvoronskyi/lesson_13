@@ -1,6 +1,6 @@
 import random
 import time
-#random.seed(11)
+random.seed(10)
 
 # Завдання 2. Додати до попереднього завдання код будь-якого алгоритму
 # сортування. Додати функцію, яка б обчислювала середній час роботи алгоритму
@@ -9,11 +9,11 @@ import time
 
 print('\n--- Task 2. BUBBLE SORT ---')
 
-
+# Список, куди будуть сортуватися числа.
 int_list = []
 
 # Кількість елементів для пошуку.
-for i in range(1000):            # Діпазон пошуку
+for i in range(0, 5000):            # Діпазон пошуку
     int_list.append(random.randint(1, 1000))
 print('Unsorted list:', int_list)
 
@@ -35,7 +35,10 @@ def bubble_sort(nums):
 
 
 start_time = time.time()
+
+# Запуск функції.
 bubble_sort(int_list)
 print('Amount of numbers in the list:', len(int_list))
 print('The execution time is %s seconds.' % (time.time() - start_time))
-print('Average time:', (time.time() - start_time) / len(int_list))
+print('The average execution time of each number:',
+      (time.time() - start_time) / len(int_list))
