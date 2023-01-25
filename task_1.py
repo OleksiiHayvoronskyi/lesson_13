@@ -39,6 +39,7 @@ def get_sorting():
     print('\nString list:', str_list)
     print('In the string list', len(str_list), 'random words.')
     print('The execution time is %s seconds.' % (time.time() - start_time))
+    print('Average time:', (time.time() - start_time) / len(str_list))
 
 
 get_sorting()
