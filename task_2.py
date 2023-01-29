@@ -23,7 +23,7 @@ def bubble_sort(int_list, print_step=False):
     n = len(int_list)
     # Буде шукати, поки не перевірить весь список.
     for i in range(n - 1):
-        for j in range(n - 1, i, -1):
+        for j in range(n - 1, i, - 1):
             if int_list[j] < int_list[j - 1]:
                 int_list[j], int_list[j - 1] = int_list[j - 1], int_list[j]
             # Друкує кожен масив даних, що у діапазоні пошуку.
